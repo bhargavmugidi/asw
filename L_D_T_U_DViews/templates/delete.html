@@ -1,0 +1,13 @@
+
+<center>
+    <form method="post">
+        {% csrf_token %}
+    <h2>Employee Information</h2>
+        <h2>=================</h2>
+    <h3>IDNO: {{ object.idno }}</h3>
+    <h3>NAME: {{ object.name }}</h3>
+    <h3>SALARY: {{ object.salary}}</h3>
+        <h2 style="color: red">Employee {{ object.idno }} is Deleted</h2>
+        <button type="submit">Delete</button>
+    </form>
+</center>
